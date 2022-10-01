@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Ledger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="section section-header">
+      <div class="container container-header">
+        <div class="container-header-overlay">
+          <a href="./index.html" class="logo logo__link link">
+            <svg class="logo__icon" width="39" height="35">
+              <use href="./images/icons.svg#icon-book-open"></use>
+            </svg>
+            Finance<span class="logo__link-span">Ledger</span>
+          </a>
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link link" href="#home">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="#about">About</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="#cases">Cases</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="#blog">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-hero" id="home">
+        <div class="container container-hero">
+          <h1 class="section-hero__title">The Sky Is The Limit</h1>
+          <p class="section-hero__desc">We provide world class financial assistance</p>
+          <button class="section-hero__btn button" type="button">
+            <svg class="section-hero__btn--icon" width="9" height="18">
+              <use href="./images/icons.svg#icon-angle-right"></use>
+            </svg>
+            Read More
+          </button>
+        </div>
+      </section>
+      <section class="section section-callback" id="contact">
+        <div class="container container-callback">
+          <picture>
+            <source
+              srcset="
+                ./images/callback/image-desktop.webp    1x,
+                ./images/callback/image-desktop@2x.webp 2x
+              "
+              media="(min-width: 1360px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/callback/image-desktop.jpg    1x,
+                ./images/callback/image-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1360px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/callback/image-tablet.webp    1x,
+                ./images/callback/image-tablet@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/callback/image-tablet.jpg    1x,
+                ./images/callback/image-tablet@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/callback/image-mobile.webp    1x,
+                ./images/callback/image-mobile@2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/callback/image-mobile.jpg    1x,
+                ./images/callback/image-mobile@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+              type="image/jpeg"
+            />
+            <img src="./images/callback/image-mobile.jpg" alt="Десктопні додатки" />
+          </picture>
+          <form class="form">
+            <h2 class="section__title">Request Callback</h2>
+            <input
+              type="text"
+              class="form__name"
+              name="user-name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="email"
+              class="form__email"
+              name="user-email"
+              placeholder="Enter email*"
+              required
+            />
+            <button class="form__btn button" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section footer">
+      <div class="container">
+        <p>footer</p>
+      </div>
+    </footer>
+  </body>
+</html>
