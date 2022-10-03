@@ -425,6 +425,62 @@ button {
     margin-top: 17px;
   }
 }
+.container-cases {
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 50px;
+  padding-bottom: 47px;
+  text-align: center;
+}
+
+.cases__title {
+  margin-top: 15px;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+.cases__desc {
+  margin-top: 35px;
+  margin-bottom: 37px;
+}
+
+.image-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .cases__desc {
+    margin-bottom: 38px;
+  }
+  .image-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+  }
+  .image-list__item:nth-child(2n) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cases__desc {
+    margin-top: 34px;
+    margin-bottom: 39px;
+  }
+}
 .section-blog__blog-thumb {
   padding: 30px;
   background-color: var(--color-brand-second);
