@@ -91,6 +91,11 @@
   }
 
   .features-list {
+    &__icon-thumb {
+      width: 67px;
+      height: 67px;
+    }
+
     &__item {
       width: calc((100% - 100px) / 3);
     }
