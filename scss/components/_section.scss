@@ -4,4 +4,36 @@
     font-size: 38px;
     line-height: 1.26;
   }
+
+  &__suptitle {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__suptitle {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+
+    &__title {
+      width: 65%;
+    }
+
+    &__desc {
+      font-size: 18px;
+      line-height: 1.56;
+    }
+  }
+
+  @media screen and (min-width: 1360px) {
+    &__title {
+      width: 100%;
+    }
+  }
 }

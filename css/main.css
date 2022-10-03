@@ -19,11 +19,17 @@
 
 .button {
   padding-block: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  line-height: 1.6;
+  padding-left: 37px;
+  padding-right: 37px;
+  line-height: 1.38;
   color: var(--color-text-light);
   background: var(--color-brand-first);
+}
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 18px;
+    line-height: 1.6;
+  }
 }
 
 body {
@@ -70,6 +76,32 @@ button {
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
+}
+.section__suptitle {
+  font-size: 18px;
+  line-height: 1.66;
+}
+.section__desc {
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media screen and (min-width: 768px) {
+  .section__suptitle {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+  .section__title {
+    width: 65%;
+  }
+  .section__desc {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .section__title {
+    width: 100%;
+  }
 }
 
 .container {
@@ -283,6 +315,114 @@ button {
     background-image: var(--color-home-overlay), url(../images/home/image-desktop@2x.jpg);
   }
 }
+.section-about__features-list {
+  padding: 30px 50px;
+  text-align: center;
+}
+.section-about__solutions {
+  background-color: var(--color-brand-first);
+}
+.section-about__solutions-thumb {
+  padding: 30px;
+}
+
+.features-list__icon-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-brand-first);
+  border-radius: 50%;
+}
+.features-list__icon {
+  fill: var(--color-text-light);
+}
+.features-list__suptitle {
+  margin-top: 11px;
+}
+.features-list__desc {
+  margin-top: 15px;
+}
+
+.solutions__suptitle, .solutions__title, .solutions__desc {
+  color: var(--color-text-light);
+}
+.solutions__title {
+  margin-top: 5px;
+}
+.solutions__desc {
+  margin-top: 25px;
+}
+.solutions__button {
+  margin-top: 14px;
+  border: 1px solid var(--color-text-light);
+}
+
+@media screen and (max-width: 767px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-about__features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 47px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  .section-about__solutions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section-about__solutions-thumb {
+    width: 50%;
+    padding-right: 40px;
+  }
+  .features-list__item {
+    width: calc((100% - 100px) / 3);
+  }
+  .features-list__suptitle {
+    margin-top: 15px;
+  }
+  .features-list__desc {
+    margin-top: 16px;
+  }
+  .solutions__desc {
+    margin-top: 26px;
+  }
+  .solutions__button {
+    margin-top: 20px;
+    border: 1px solid var(--color-text-light);
+  }
+}
+@media screen and (min-width: 1360px) {
+  .section-about__solutions-thumb {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    padding-left: 30px;
+    padding-right: 44px;
+  }
+  .section-about .solutions__button {
+    margin-top: 17px;
+  }
+}
 .form {
   padding: 26px 30px 30px;
   background-color: var(--color-bg-form);
@@ -304,10 +444,9 @@ button {
 .form__email {
   margin-top: 36px;
 }
-.form__btn {
+.form__button {
   width: 100%;
   margin-top: 53px;
-  line-height: 1.38;
 }
 
 @media screen and (min-width: 768px) {
@@ -319,9 +458,8 @@ button {
   .form {
     width: 50%;
   }
-  .form__btn {
+  .form__button {
     padding-block: 9px;
-    font-size: 18px;
   }
   .form__name, .form__email {
     padding-top: 8px;
@@ -332,7 +470,7 @@ button {
   .form {
     padding: 78px 30px 82px;
   }
-  .form__btn {
+  .form__button {
     margin-top: 60px;
   }
   .form__name, .form__email {

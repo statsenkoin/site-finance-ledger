@@ -1,0 +1,134 @@
+.section-about {
+  &__features-list {
+    padding: 30px 50px;
+    text-align: center;
+  }
+
+  &__solutions {
+    background-color: var(--color-brand-first);
+  }
+
+  &__solutions-thumb {
+    padding: 30px;
+  }
+}
+
+.features-list {
+  &__icon-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-brand-first);
+    border-radius: 50%;
+  }
+
+  &__icon {
+    fill: var(--color-text-light);
+  }
+
+  &__suptitle {
+    margin-top: 11px;
+  }
+
+  &__desc {
+    margin-top: 15px;
+  }
+}
+
+.solutions {
+  &__suptitle,
+  &__title,
+  &__desc {
+    color: var(--color-text-light);
+  }
+
+  &__title {
+    margin-top: 5px;
+  }
+
+  &__desc {
+    margin-top: 25px;
+  }
+
+  &__button {
+    margin-top: 14px;
+    border: 1px solid var(--color-text-light);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features-list {
+    &__item:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-about {
+    &__features-list {
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+      padding-top: 40px;
+      padding-bottom: 47px;
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+
+    &__solutions {
+      display: flex;
+    }
+
+    &__solutions-thumb {
+      width: 50%;
+      padding-right: 40px;
+    }
+  }
+
+  .features-list {
+    &__item {
+      width: calc((100% - 100px) / 3);
+    }
+
+    &__suptitle {
+      margin-top: 15px;
+    }
+
+    &__desc {
+      margin-top: 16px;
+    }
+  }
+
+  .solutions {
+    &__desc {
+      margin-top: 26px;
+    }
+
+    &__button {
+      margin-top: 20px;
+      border: 1px solid var(--color-text-light);
+    }
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .section-about {
+    &__solutions-thumb {
+      padding-top: 84px;
+      padding-bottom: 84px;
+      padding-left: 30px;
+      padding-right: 44px;
+    }
+
+    .solutions {
+      &__button {
+        margin-top: 17px;
+      }
+    }
+  }
+}

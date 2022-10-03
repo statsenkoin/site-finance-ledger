@@ -64,6 +64,124 @@
           </button>
         </div>
       </section>
+      <section class="section section-about" id="about">
+        <div class="container container-about">
+          <ul class="features-list section-about__features-list list">
+            <li class="features-list__item">
+              <div class="features-list__icon-thumb">
+                <svg class="features-list__icon" width="35" height="35">
+                  <use href="./images/icons.svg#icon-university"></use>
+                </svg>
+              </div>
+              <p class="section__suptitle features-list__suptitle">Investmant Banking</p>
+              <p class="section__desc features-list__desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+            <li class="features-list__item">
+              <div class="features-list__icon-thumb">
+                <svg class="features-list__icon" width="35" height="35">
+                  <use href="./images/icons.svg#icon-book-reader"></use>
+                </svg>
+              </div>
+              <p class="section__suptitle features-list__suptitle">Portfolio Manager</p>
+              <p class="section__desc features-list__desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+            <li class="features-list__item">
+              <div class="features-list__icon-thumb">
+                <svg class="features-list__icon" width="35" height="35">
+                  <use href="./images/icons.svg#icon-pencil"></use>
+                </svg>
+              </div>
+              <p class="section__suptitle features-list__suptitle">Tax & Custudio</p>
+              <p class="section__desc features-list__desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+          </ul>
+          <div class="solutions section-about__solutions">
+            <picture>
+              <source
+                srcset="
+                  ./images/solutions/image-desktop.webp    1x,
+                  ./images/solutions/image-desktop@2x.webp 2x
+                "
+                media="(min-width: 1360px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/solutions/image-desktop.jpg    1x,
+                  ./images/solutions/image-desktop@2x.jpg 2x
+                "
+                media="(min-width: 1360px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/solutions/image-tablet.webp    1x,
+                  ./images/solutions/image-tablet@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/solutions/image-tablet.jpg    1x,
+                  ./images/solutions/image-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/solutions/image-mobile.webp    1x,
+                  ./images/solutions/image-mobile@2x.webp 2x
+                "
+                media="(min-width: 320px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/solutions/image-mobile.jpg    1x,
+                  ./images/solutions/image-mobile@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+                type="image/jpeg"
+              />
+              <img src="./images/solutions/image-mobile.jpg" alt="Team you can trust" />
+            </picture>
+            <div class="section-about__solutions-thumb">
+              <p class="section__suptitle solutions__suptitle">What you are looking for</p>
+              <h2 class="section__title solutions__title">We provide bespoke solutions</h2>
+              <p class="section__desc solutions__desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
+                dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore
+                explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?
+              </p>
+              <button class="solutions__button button" type="button">Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-cases" id="cases">
+        cases
+        <div class="container container-cases"></div>
+      </section>
+      <section class="section section-blog" id="blog">
+        blog
+        <div class="container container-blog"></div>
+      </section>
+      <section class="section section-team">
+        team
+        <div class="container container-team"></div>
+      </section>
+
       <section class="section section-callback" id="contact">
         <div class="container container-callback">
           <picture>
@@ -115,7 +233,7 @@
               media="(min-width: 320px)"
               type="image/jpeg"
             />
-            <img src="./images/callback/image-mobile.jpg" alt="Десктопні додатки" />
+            <img src="./images/callback/image-mobile.jpg" alt="Щur professionals answer" />
           </picture>
           <form class="form">
             <h2 class="section__title">Request Callback</h2>
@@ -133,13 +251,13 @@
               placeholder="Enter email*"
               required
             />
-            <button class="form__btn button" type="submit">Send</button>
+            <button class="form__button button" type="submit">Send</button>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="section footer">
+    <footer class="section section-footer">
       <div class="container">
         <p>footer</p>
       </div>
