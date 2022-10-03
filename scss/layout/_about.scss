@@ -118,17 +118,24 @@
 
 @media screen and (min-width: 1360px) {
   .section-about {
+    &__features-list {
+      gap: 71px;
+      padding-bottom: 19px;
+      padding-left: 66px;
+      padding-right: 66px;
+    }
+
     &__solutions-thumb {
       padding-top: 84px;
       padding-bottom: 84px;
       padding-left: 30px;
       padding-right: 44px;
     }
+  }
 
-    .solutions {
-      &__button {
-        margin-top: 17px;
-      }
+  .solutions {
+    &__button {
+      margin-top: 17px;
     }
   }
 }
