@@ -110,6 +110,10 @@
   }
 
   .solutions {
+    &__title {
+      width: 65%;
+    }
+
     &__desc {
       margin-top: 26px;
     }
@@ -139,6 +143,10 @@
   }
 
   .solutions {
+    &__title {
+      width: 100%;
+    }
+
     &__button {
       margin-top: 17px;
     }
