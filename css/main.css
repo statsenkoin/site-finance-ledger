@@ -13,6 +13,7 @@
   --color-text-dark-alt: #808080;
   --color-home-overlay: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   --color-team-overlay: rgba(0, 0, 0, 0.6);
+  --color-team-box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
   /* -------------- Шрифти сайту --------------------- */
   --font-main: "Open Sans", sans-serif;
 }
@@ -590,9 +591,28 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  scale: 1;
+  -webkit-transition-property: scale, -webkit-transform;
+  transition-property: scale, -webkit-transform;
+  transition-property: transform, scale;
+  transition-property: transform, scale, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--color-team-overlay);
+}
+.team__card:hover .team__image-overlay, .team__card:focus .team__image-overlay {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  scale: 1.02;
+}
+.team__card:hover .team__image, .team__card:focus .team__image {
+  scale: 1.02;
+  -webkit-box-shadow: var(--color-team-box-shadow);
+          box-shadow: var(--color-team-box-shadow);
 }
 
 @media screen and (max-width: 767px) {
