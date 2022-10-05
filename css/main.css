@@ -270,6 +270,19 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition-property: scale;
+  transition-property: scale;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-hero__btn:hover, .section-hero__btn:focus {
+  scale: 1.02;
+  padding-block: 9px;
+  -webkit-box-shadow: var(--color-box-shadow);
+          box-shadow: var(--color-box-shadow);
+  border: 2px solid var(--color-text-light);
 }
 .section-hero__btn--icon {
   margin-right: 5px;
