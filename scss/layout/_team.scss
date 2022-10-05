@@ -42,7 +42,6 @@
 
     // ------------------------------
     transform: translateY(100%);
-    scale: 1;
 
     @include customTransition(transform, scale);
     // -------------------------------
@@ -53,13 +52,12 @@
   &__card:hover &__image-overlay,
   &__card:focus &__image-overlay {
     transform: translateY(0%);
-    scale: 1.02;
   }
 
   &__card:hover &__image,
   &__card:focus &__image {
     scale: 1.02;
-    box-shadow: var(--color-team-box-shadow);
+    box-shadow: var(--color-box-shadow);
   }
 }
 

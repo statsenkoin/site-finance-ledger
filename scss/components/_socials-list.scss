@@ -4,6 +4,12 @@
 
   &__icon {
     fill: var(--color-bg-light);
-    // fill: var(--color-brand-first);
+
+    @include customTransition(fill);
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    fill: var(--color-brand-first);
   }
 }
